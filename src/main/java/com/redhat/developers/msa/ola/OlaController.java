@@ -39,7 +39,7 @@ public class OlaController {
     @RequestMapping(method = RequestMethod.GET, value = "/ola", produces = "text/plain")
     public String ola() {
         String hostname = System.getenv().getOrDefault("HOSTNAME", "Unknown");
-        return String.format("Jim says Olá de %s", hostname);
+        return String.format("Burr says Olá de %s", hostname);
     }
 
     @CrossOrigin
